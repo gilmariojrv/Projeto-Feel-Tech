@@ -1,0 +1,202 @@
+<div class="row" ng-controller="homeController as vm" ng-init="vm.init()">
+      <div  class="col-12 col-xl-12">
+        <!-- <div class="col-5">
+          <img src="/imagens/bonecas.png" width="100%">
+        </div> -->
+        <div class=" row gj-header">
+          <div class=" gj-centralizar offset-1 col-1 col-xl-7">
+            <a class="gj-cursor">
+              <i class="bi bi-house-door-fill icones"></i> 
+              <span class="spn-title"> Ir para o Portal Banzai </span>
+            </a>
+          </div>
+          <div class="gj-centralizar col-1 col-xl-2">
+            <a class="gj-cursor">
+              <i class="bi bi-geo-alt-fill icones"></i> 
+              <span class="spn-title">Encontre uma concessionária</span>
+            </a>
+          </div>
+          <div class=" gj-centralizar col-1 col-xl-2">
+            <a class="gj-cursor">
+              <i class="bi bi-envelope-fill icones"></i>
+              <span class="spn-title">Fale conosco</span>
+            </a>
+          </div>
+          
+        </div>
+
+        <div class="gj-posicionaWeb offset-9 col-xl-2 rounded">
+            <div class="row" style="margin-top: 10px;">
+              <div class="col-1 col-xl-1">
+                <h2>
+                  <i class="bi bi-telephone-fill icones"></i>
+                </h2>
+              </div>
+              <div class="offset-1 col-6 col-xl-8" >
+                <a class="gj-small-black">Solicitar um </a>
+                <p class="gj-large-red">CONTATO</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="alert alert-danger text-center" ng-if="vm.error" role="alert">
+                  {{vm.error}}
+                </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-person-fill"></i>
+                    </span>
+                    <input type="text" class="form-control form-control-lg" placeholder="Nome:" ng-model="vm.nome" ng-change="vm.error = '';">
+                  </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-envelope"></i>
+                    </span>
+                    <input type="text" class="form-control form-control-lg" placeholder="Email:" ng-model="vm.email" ng-change="vm.error = '';">
+                  </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-telephone-fill icones"></i>
+                    </span>
+                    <input type="text" class="form-control form-control-lg" placeholder="Telefone:" ng-model="vm.telefone" ng-change="vm.error = '';">
+                  </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-clock"></i>
+                    </span>
+                    <select class="form-control form-control-lg" ng-model="vm.horario" ng-change="vm.error = '';" ng-options="horario.hora for horario in vm.listaHorarios">
+                      <option value="">Selecione o horário:</option>
+                    </select>
+                  </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-geo-alt-fill"></i>
+                    </span>
+                    <select class="form-control form-control-lg" ng-model="vm.unidade" ng-change="vm.error = '';" ng-options="unidade.local for unidade in vm.listaUnidades">
+                      <option value="">Selecione a unidade:</option>
+                    </select>
+                  </div>
+                  <div class="input-group">
+                    <button 
+                      type="button" 
+                      class="btn btn-success btn-block" 
+                      style="margin-top: 5px;"
+                      ng-click="vm.agendarTestDrive();"
+                      >
+                      AGENDAR TEST DRIVE
+                    </button>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row " style="background-color: white;">
+          <div class="col-12 col-xl-12 gj-centralizarImg">
+            <img src="/imagens/civic1.jpeg" class="gj-imgWeb" style="width: 102%;" alt="Responsive image">
+            <img src="/imagens/civic3.jpg" class="gj-imgMobile" alt="Responsive image">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-8 col-xl-6 rounded gj-posicionaMobile">
+            <div class="row mt-3 text-truncate">
+              <div class="col-1 col-xl-1">
+                <h2>
+                  <i class="bi bi-telephone-fill icones"></i>
+                </h2>
+              </div>
+              <div class="offset-1 col-6 col-xl-8" >
+                <a class="gj-small-black">Solicitar um </a>
+                <p class="gj-large-red">CONTATO</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="alert alert-danger text-center" ng-if="vm.error" role="alert">
+                  {{vm.error}}
+                </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-person-fill"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Nome:" ng-model="vm.nome" ng-change="vm.error = '';">
+                  </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-envelope"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Email:" ng-model="vm.email" ng-change="vm.error = '';">
+                  </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-telephone-fill icones"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Telefone:" ng-model="vm.telefone" ng-change="vm.error = '';">
+                  </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-clock"></i>
+                    </span>
+                    <select class="form-control" ng-model="vm.horario" ng-change="vm.error = '';" ng-options="horario.hora for horario in vm.listaHorarios">
+                      <option value="">Selecione o horário:</option>
+                    </select>
+                  </div>
+                  <div class="input-group gj-input">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="bi bi-geo-alt-fill"></i>
+                    </span>
+                    <select class="form-control" ng-model="vm.unidade" ng-change="vm.error = '';" ng-options="unidade.local for unidade in vm.listaUnidades">
+                      <option value="">Selecione a unidade:</option>
+                    </select>
+                  </div>
+                  <div class="input-group gj-input text-truncate">
+                    <button 
+                      type="button" 
+                      class="btn btn-success btn-block" 
+                      style="margin-top: 5px;"
+                      ng-click="vm.agendarTestDrive();"
+                      >
+                      AGENDAR TEST DRIVE
+                    </button>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5" style="background-color: rgb(255, 255, 255);">
+          <div class="offset-1 col-xl-10">
+            <h2 class="font-italic font-weight-norma md-subhead">A EMOÇÃO DE DIRIGIR LEVA VOCE MAIS LONGE</h2>
+          </div>
+          <div class="col-xl-12" ng-repeat="imagem in vm.listaImagens1" > 
+            <div class="offset-1 mt-2 col-xl-2" >
+              <img src="{{imagem}}" class="img-thumbnail gj-tamb">
+            </div>
+          </div>
+        </div>
+
+        <div class="row " style="background-color: rgb(18, 136, 47);">
+          
+        </div>
+
+        <div class="modal" id="modalDescricao" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title black">Descrição do Agendamento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body black">
+                <p>Olá {{vm.nomeModal}} seu test drive foi agendado com sucesso para nossa unidade em {{vm.unidadeModal.local}} às: {{vm.horarioModal.hora}} horas. 
+                  Enviaremos os dados do carro para o email: {{vm.emailModal}}, lembre-se de levar o documento de identidade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+</div>

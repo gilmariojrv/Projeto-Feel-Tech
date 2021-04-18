@@ -1,0 +1,144 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.texto-small {
+    font-size: small;
+}
+
+.gj-header{
+  height: 45px;
+  background-color:rgba(224, 224, 224, 0.76);
+}
+
+.gj-backgrounds{
+  height: 400px;
+}
+
+.input[type="text"]{
+  padding: 0.2em;
+  border: 1px;
+}
+
+@media(max-width:1519px){
+  .spn-title{
+    display: none;
+  }
+  .gj-centralizar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .icones{
+    color:rgba(153, 152, 152, 0.705);
+  }
+  .gj-posicionaMobile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(231, 231, 231);
+    z-index: 1000;
+  }
+
+  .gj-input{
+    margin-bottom: 3px;
+  }
+
+  .gj-small-black{
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-style: oblique;
+  }
+
+  .gj-imgWeb{
+    display: none;
+  }
+
+  .gj-large-red{
+    margin-top: -1ch;
+    color: red;
+    font-size: x-large;
+    font-style: inherit;
+  }
+
+  .gj-posicionaWeb{
+    display: none;
+  }
+}
+
+@media(max-width: 649px){
+  .gj-imgMobile{
+    width: 100%;
+  }
+}
+
+@media(min-width:650px) and (max-width:1519px){
+  .gj-imgMobile{
+    object-fit: cover;
+  }
+
+  .gj-centralizarImg{
+    text-align: center;
+  }
+
+}
+
+
+@media(min-width: 1520px){
+  .gj-posicionaWeb {
+    position: fixed;
+    top: 38%;
+    padding-bottom: 10px;
+    background-color:rgb(231, 231, 231);
+    z-index: 1000;
+  }
+
+  .gj-imgMobile{
+    display: none;
+  }
+
+  .icones{
+    color:rgb(173, 173, 173);
+  }
+
+  .gj-input{
+    margin-bottom: 5px;
+  }
+  .gj-small-black{
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-style: oblique;
+  }
+  .gj-large-red{
+    margin-top: -1ch;
+    color: red;
+    font-size: x-large;
+    font-style: inherit;
+  }
+
+  .gj-posicionaMobile{
+    display: none;
+  }
+
+  .gj-centralizar{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .gj-cursor{
+    cursor: pointer;
+  }
+
+  .gj-tamb{
+    width: 170px;
+    margin-left: -15px;
+  }
+
+}
+
