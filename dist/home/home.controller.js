@@ -42,7 +42,7 @@
       vm.listaImagens1 = [];
       vm.listaImagens1[0] = '/imagens/civicTumb4.jpg';
       vm.listaImagens1[1] = '/imagens/civicTumb5.jpg';
-      vm.listaImagens1[2] = '/imagens/civicTumb6.jpg';
+      vm.listaImagens1[2] = '/imagens/civicTumb7.jpg';
     }
     
     function agendarTestDrive(){

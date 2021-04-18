@@ -1,12 +1,34 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
 
+.zerar{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .c-pointer {
     cursor: pointer;
 }
 
 .texto-small {
     font-size: small;
+}
+
+.gj-centralizarTd{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.gj-box{
+  border-color: rgb(255, 38, 0);
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 1px;
+  background-color: white; 
+  height: 90px;
 }
 
 .gj-header{
@@ -23,19 +45,31 @@
   border: 1px;
 }
 
-@media(max-width:1519px){
+@media(max-width:1505px){
   .spn-title{
     display: none;
   }
+  
   .gj-centralizar{
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
   }
+
+  .gj-boxWeb{
+    display: none;
+  }
+
+  .gj-centralizarMb{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .icones{
     color:rgba(153, 152, 152, 0.705);
   }
+
   .gj-posicionaMobile {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -70,15 +104,57 @@
   .gj-posicionaWeb{
     display: none;
   }
-}
+  
+  .gj-tamb{
+    display: none;
+  }
 
-@media(max-width: 649px){
-  .gj-imgMobile{
-    width: 100%;
+  .gj-textoBanner1{
+    text-align: center;
+  }
+
+  .gj-banner2{
+    background:url('/imagens/civicBanner2.2.2Mobile.jpg'); 
+    background-repeat:  no-repeat; 
+    background-size: 100% 100%; 
+  }
+
+  .gj-next{
+    margin-top: auto; 
+    margin-bottom: auto; 
+  }
+
+  .gj-textoBanner2{
+    margin-top: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: bottom;
+    color: white;
+    text-align: center;
   }
 }
 
-@media(min-width:650px) and (max-width:1519px){
+@media(max-width: 530px){
+  .gj-imgMobile{
+    width: 100%;
+  }
+  .gj-tamb{
+    display: none;
+  }
+
+  .gj-centralizarMb{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gj-next{
+    margin-top: auto; 
+    margin-bottom: auto; 
+  }
+
+}
+
+@media(min-width:650px) and (max-width:1506px){
   .gj-imgMobile{
     object-fit: cover;
   }
@@ -87,16 +163,84 @@
     text-align: center;
   }
 
+  .gj-tamb{
+    display: none;
+  }
+
+  .gj-centralizarMb{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gj-textoBanner1{
+    text-align: center;
+  }
+
+  .gj-banner2{
+    background:url('/imagens/civicBanner2.2.2Mobile.jpg'); 
+    background-repeat:  no-repeat; 
+    background-size: 100% 100%; 
+  }
+
+  .gj-textoBanner2{
+    margin-top: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: bottom;
+    color: white;
+    text-align: center;
+  }
+
+  .gj-next{
+    margin-top: auto; 
+    margin-bottom: auto; 
+
+  }
+
 }
 
 
-@media(min-width: 1520px){
+@media(min-width: 1506px){
   .gj-posicionaWeb {
     position: fixed;
     top: 38%;
     padding-bottom: 10px;
     background-color:rgb(231, 231, 231);
     z-index: 1000;
+  }
+
+  .gj-banner2{
+    background:url('/imagens/civicBanner2.2.2Teste.jpg'); 
+    background-repeat:  no-repeat; 
+    background-size: 100% 100%; 
+    height: 430px;
+  }
+
+  .gj-textoBanner2{
+    margin-top: 330px;
+    margin-left: 120px;
+    text-align: bottom;
+    color: white;
+  }
+
+  .gj-espacoFoto{
+    margin-left: 40px;
+  }
+
+  .gj-title{
+    margin-left: 25px;
+  }
+
+  .gj-texto{
+    margin-left: 20px;
+  }
+
+  .gj-title2{
+    margin-left: 40px;
+  }
+
+  .gj-boxMobile{
+    display: none;
   }
 
   .gj-imgMobile{
@@ -135,10 +279,29 @@
     cursor: pointer;
   }
 
+  .gj-next{
+    margin-top: 180px; 
+    margin-bottom: auto; 
+  }
+
   .gj-tamb{
-    width: 170px;
+    width: 200px;
     margin-left: -15px;
   }
 
+  .gj-banner{
+    margin-left: -50px;
+  }
+
+  .gj-textoBanner1{
+   margin-left: 100px; 
+   /* margin-top: -55px; */
+  }
+}@media(min-width: 1680px){
+  .gj-next{
+    margin-top: 180px; 
+    margin-left: -40px;
+    margin-bottom: auto; 
+  }
 }
 
