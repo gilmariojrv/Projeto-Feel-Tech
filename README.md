@@ -11,3 +11,5 @@ Instruções para rodar o projeto:
 - Ainda dentro da pasta do projeto, executar o comando: npm install
 - Execute o comando: grunt
 - Acesse no navegador a URL: http://localhost:8000/#!/
+
+OBS: Como solicitado, há componentes inativos, como por exemplo botões. Foi implementado função apenas ao cadastro de test drive. 
